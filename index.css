@@ -1,0 +1,74 @@
+:root {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(354 100% 3%);
+  --bg: hsl(355 100% 6%);
+  --bg-light: hsl(356 71% 10%);
+  --text: hsl(1 100% 100%);
+  --text-muted: hsl(0 66% 75%);
+  --highlight: hsl(358 40% 44%);
+  --border: hsl(355 54% 31%);
+  --border-muted: hsl(348 99% 18%);
+  --primary: hsl(360 82% 76%);
+  --secondary: hsl(183 63% 50%);
+  --danger: hsl(8 63% 66%);
+  --warning: hsl(52 49% 46%);
+  --success: hsl(151 41% 51%);
+  --info: hsl(217 73% 68%);
+  /* oklch */
+  --bg-dark: oklch(0.1 0.06 20);
+  --bg: oklch(0.15 0.06 20);
+  --bg-light: oklch(0.2 0.06 20);
+  --text: oklch(0.96 0.1 20);
+  --text-muted: oklch(0.76 0.1 20);
+  --highlight: oklch(0.5 0.12 20);
+  --border: oklch(0.4 0.12 20);
+  --border-muted: oklch(0.3 0.12 20);
+  --primary: oklch(0.76 0.12 20);
+  --secondary: oklch(0.76 0.12 200);
+  --danger: oklch(0.7 0.12 30);
+  --warning: oklch(0.7 0.12 100);
+  --success: oklch(0.7 0.12 160);
+  --info: oklch(0.7 0.12 260);
+}
+
+body.light {
+  /* hsl (fallback color) */
+  --bg-dark: hsl(1 100% 94%);
+  --bg: hsl(2 100% 99%);
+  --bg-light: hsl(2 100% 100%);
+  --text: hsl(348 100% 6%);
+  --text-muted: hsl(355 54% 31%);
+  --highlight: hsl(1 100% 100%);
+  --border: hsl(359 41% 56%);
+  --border-muted: hsl(359 60% 69%);
+  --primary: hsl(355 54% 31%);
+  --secondary: hsl(183 100% 8%);
+  --danger: hsl(7 47% 42%);
+  --warning: hsl(53 100% 17%);
+  --success: hsl(161 100% 19%);
+  --info: hsl(217 50% 44%);
+  /* oklch */
+  --bg-dark: oklch(0.92 0.06 20);
+  --bg: oklch(0.96 0.06 20);
+  --bg-light: oklch(1 0.06 20);
+  --text: oklch(0.15 0.12 20);
+  --text-muted: oklch(0.4 0.12 20);
+  --highlight: oklch(1 0.12 20);
+  --border: oklch(0.6 0.12 20);
+  --border-muted: oklch(0.7 0.12 20);
+  --primary: oklch(0.4 0.12 20);
+  --secondary: oklch(0.4 0.12 200);
+  --danger: oklch(0.5 0.12 30);
+  --warning: oklch(0.5 0.12 100);
+  --success: oklch(0.5 0.12 160);
+  --info: oklch(0.5 0.12 260);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+}
+
+.container {
+    color: var(--text-muted);
+}
