@@ -3,6 +3,7 @@
    ========================================================================== */
 :root {
   /* hsl (fallback color) */
+<<<<<<< HEAD
   --bg-dark: hsl(354 100% 3%);
   --bg: hsl(355 100% 6%);
   --bg-light: hsl(356 71% 10%);
@@ -18,25 +19,41 @@
   --success: hsl(151 41% 51%);
   --info: hsl(217 73% 68%);
   
+=======
+  --bg-dark: hsl(184 100% 0%);
+  --bg: hsl(181 100% 0%);
+  --bg-light: hsl(180 100% 1%);
+  --text: hsl(177 100% 82%);
+  --text-muted: hsl(178 49% 56%);
+  --highlight: hsl(179 100% 7%);
+  --border: hsl(180 100% 4%);
+  --border-muted: hsl(180 100% 1%);
+  --primary: hsl(179 100% 24%);
+  --secondary: hsl(351 100% 77%);
+  --danger: hsl(8 84% 66%);
+  --warning: hsl(54 100% 27%);
+  --success: hsl(160 100% 35%);
+  --info: hsl(217 100% 69%);
+>>>>>>> 68a0409 (Lancement officiel de la page d'accueil et du style global)
   /* oklch */
-  --bg-dark: oklch(0.1 0.06 20);
-  --bg: oklch(0.15 0.06 20);
-  --bg-light: oklch(0.2 0.06 20);
-  --text: oklch(0.96 0.1 20);
-  --text-muted: oklch(0.76 0.1 20);
-  --highlight: oklch(0.5 0.12 20);
-  --border: oklch(0.4 0.12 20);
-  --border-muted: oklch(0.3 0.12 20);
-  --primary: oklch(0.76 0.12 20);
-  --secondary: oklch(0.76 0.12 200);
-  --danger: oklch(0.7 0.12 30);
-  --warning: oklch(0.7 0.12 100);
-  --success: oklch(0.7 0.12 160);
-  --info: oklch(0.7 0.12 260);
+  --bg-dark: oklch(0.1 0.08 192);
+  --bg: oklch(0.15 0.08 192);
+  --bg-light: oklch(0.2 0.08 192);
+  --text: oklch(0.96 0.1 192);
+  --text-muted: oklch(0.76 0.1 192);
+  --highlight: oklch(0.5 0.16 192);
+  --border: oklch(0.4 0.16 192);
+  --border-muted: oklch(0.3 0.16 192);
+  --primary: oklch(0.76 0.16 192);
+  --secondary: oklch(0.76 0.16 12);
+  --danger: oklch(0.7 0.16 30);
+  --warning: oklch(0.7 0.16 100);
+  --success: oklch(0.7 0.16 160);
+  --info: oklch(0.7 0.16 260);
 }
-
 body.light {
   /* hsl (fallback color) */
+<<<<<<< HEAD
   --bg-dark: hsl(1 100% 94%);
   --bg: hsl(2 100% 99%);
   --bg-light: hsl(2 100% 100%);
@@ -52,23 +69,48 @@ body.light {
   --success: hsl(161 100% 19%);
   --info: hsl(217 50% 44%);
   
+=======
+  --bg-dark: hsl(177 82% 80%);
+  --bg: hsl(177 100% 86%);
+  --bg-light: hsl(177 100% 91%);
+  --text: hsl(185 100% 0%);
+  --text-muted: hsl(180 100% 4%);
+  --highlight: hsl(178 100% 71%);
+  --border: hsl(179 100% 12%);
+  --border-muted: hsl(179 100% 19%);
+  --primary: hsl(180 100% 4%);
+  --secondary: hsl(339 100% 27%);
+  --danger: hsl(6 65% 41%);
+  --warning: hsl(52 100% 13%);
+  --success: hsl(161 100% 12%);
+  --info: hsl(217 67% 44%);
+>>>>>>> 68a0409 (Lancement officiel de la page d'accueil et du style global)
   /* oklch */
-  --bg-dark: oklch(0.92 0.06 20);
-  --bg: oklch(0.96 0.06 20);
-  --bg-light: oklch(1 0.06 20);
-  --text: oklch(0.15 0.12 20);
-  --text-muted: oklch(0.4 0.12 20);
-  --highlight: oklch(1 0.12 20);
-  --border: oklch(0.6 0.12 20);
-  --border-muted: oklch(0.7 0.12 20);
-  --primary: oklch(0.4 0.12 20);
-  --secondary: oklch(0.4 0.12 200);
-  --danger: oklch(0.5 0.12 30);
-  --warning: oklch(0.5 0.12 100);
-  --success: oklch(0.5 0.12 160);
-  --info: oklch(0.5 0.12 260);
+  --bg-dark: oklch(0.92 0.08 192);
+  --bg: oklch(0.96 0.08 192);
+  --bg-light: oklch(1 0.08 192);
+  --text: oklch(0.15 0.16 192);
+  --text-muted: oklch(0.4 0.16 192);
+  --highlight: oklch(1 0.16 192);
+  --border: oklch(0.6 0.16 192);
+  --border-muted: oklch(0.7 0.16 192);
+  --primary: oklch(0.4 0.16 192);
+  --secondary: oklch(0.4 0.16 12);
+  --danger: oklch(0.5 0.16 30);
+  --warning: oklch(0.5 0.16 100);
+  --success: oklch(0.5 0.16 160);
+  --info: oklch(0.5 0.16 260);
+}
+/* ==========================================================================
+   2. Initialiser le CSS ET BASES
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+<<<<<<< HEAD
 /* ==========================================================================
    2. Initialiser le CSS ET BASES
    ========================================================================== */
@@ -86,6 +128,16 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+=======
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+>>>>>>> 68a0409 (Lancement officiel de la page d'accueil et du style global)
 /* ==========================================================================
    3. STRUCTURE MODULAIRE (Design System à utiliser par l'équipe)
    ========================================================================== */
