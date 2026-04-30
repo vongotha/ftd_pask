@@ -1,0 +1,187 @@
+/* 1. Reset et Layout global */
+body {
+    background-color: var(--bg-dark);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 300px; /* Force les 3 colonnes */
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* 2. HEADER */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-muted);
+}
+
+.logo { color: var(--primary); font-weight: bold; font-size: 1.8rem; text-decoration: none;}
+.user-profile { display: flex; align-items: center; color: var(--text); gap: 15px;}
+.avatar img { 
+    width: 45px; height: 45px; 
+    border-radius: 50%; 
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+
+/* 3. COLONNE GAUCHE */
+.sidebar-left {
+    background-color: var(--bg-dark); 
+    padding: 40px 20px;
+    border-right: 1px solid var(--border-muted);
+}
+
+.side-menu a {
+    display: block;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.side-menu a.active, .side-menu a:hover {
+    background-color: var(--bg-light);
+    color: var(--primary);
+}
+/* Container Flex pour aligner Auteur | Image | Détails */
+.classic-container {
+    display: flex;
+    align-items: center; /* Aligne tout verticalement au centre */
+    justify-content: space-between;
+    gap: 40px;
+}
+/* Style de l'auteur à gauche */
+.author-sidebar {
+    flex: 1; /* Prend de la place à gauche */
+    text-align: right;
+}
+.vertical-author {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Style de l'image au centre */
+.main-book-wrapper {
+    flex: 0 0 auto; /* Ne s'écrase pas */
+}
+
+/* 4. COLONNE CENTRALE */
+.content-center {
+    background-color: var(--bg);
+    padding: 40px;
+}
+
+.classic-book-section {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.main-book-img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+/* Style des détails à droite */
+.book-details {
+    flex: 2; /* Donne plus d'espace au texte */
+    text-align: left;
+}
+
+.book-badge {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.summary-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 400px; /* Évite que le texte soit trop large */
+}
+
+.legendary-quote {
+    font-style: italic;
+    color: var(--text);
+    border-left: 3px solid var(--primary);
+    padding-left: 20px;
+    margin: 0;
+}
+
+.book-item {
+    background-color: var(--bg-dark);
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.book-item:hover { transform: translateY(-8px); }
+
+.book-cover-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.book-cover-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 5. COLONNE DROITE (CITATIONS) */
+.sidebar-right {
+    background-color: var(--bg-light); 
+    padding: 40px 20px;
+    border-left: 1px solid var(--border-muted);
+}
+
+.quotes-mask {
+    height: 500px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.quotes-track {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: scrollQuotesUp 15s linear infinite;
+}
+
+.quote-item {
+    background-color: var(--bg);
+    color: var(--text-muted);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-style: italic;
+    border-left: 4px solid var(--primary);
+}
+
+@keyframes scrollQuotesUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); } /* -50% car on a doublé les citations pour la boucle */
+}

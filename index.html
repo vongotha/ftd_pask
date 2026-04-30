@@ -3,76 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lipens | Accueil</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- Ajouter votre style Ici -->
-    
-    <!--<link rel="stylesheet" href="css/index.css"> -->
-
+    <title>Bookz - Page Livres</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="livres.css">
 </head>
 <body>
 
-    <header class="container" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-muted);">
-        <h1>📚 Lipens</h1>
-        
-        <button id="theme-toggle" class="btn btn-secondary">
-            Basculer le Thème (Clair/Sombre)
-        </button>
+    <header class="main-header">
+        <div class="header-left">
+            <h1 class="logo">Bookz</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un livre...">
+            <button>🔍</button>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <span>Account</span>
+                <div class="avatar"></div>
+            </div>
+        </div>
     </header>
 
-    <main class="container">
-        
-        <section style="margin-bottom: 3rem; text-align: center;">
-            <h2 style="color: var(--primary); margin-bottom: 1rem; font-size: 2rem;">Découvrez de nouvelles histoires</h2>
-            <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
-                Ceci est une page d'exemple montrant comment utiliser notre design system. 
-                Remarquez comment les couleurs s'adaptent automatiquement au thème choisi.
-            </p>
-        </section>
+    <div class="page-layout">
+        <aside class="sidebar-left">
+            <div class="category-card">
+                <h3>Categories</h3>
+                <nav class="side-menu">
+                    <a href="#">Fiction</a>
+                    <a href="#">Non-fiction</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Detective</a>
+                    <a href="#">Business</a>
+                </nav>
+            </div>
+        </aside>
 
-        <div class="grid">
+        <main class="content-center">
             
-            <article class="card">
-                <h3 class="card-title">L'Écho du Silence</h3>
-                <p class="card-subtitle">Science-Fiction • Par Alex Dev</p>
-                <p class="card-text">Dans un futur où le son est monétisé, une jeune développeuse découvre une fréquence gratuite qui pourrait tout changer.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
-            </article>
+            <section class="hero-book">
+                <div class="hero-content">
+                    <span class="author-label">Auteur du mois</span>
+                    <h2>Victor Hugo</h2>
+                    <p class="summary-text">Un résumé captivant du livre classique qui s'adapte à la hauteur du conteneur sans déformer l'image.</p>
+                    <blockquote class="hero-quote">"Même la nuit la plus sombre prendra fin."</blockquote>
+                </div>
+                <div class="hero-image">
+                    <img src="https://m.media-amazon.com/images/I/81S6-39XpZL.jpg" alt="Livre Classique">
+                </div>
+            </section>
 
-            <article class="card">
-                <h3 class="card-title">Le Code Oublié</h3>
-                <p class="card-subtitle">Mystère • Par Jane Doe</p>
-                <p class="card-text">Un ancien algorithme trouvé dans les archives du serveur révèle des secrets enfouis depuis des décennies sur la création de l'IA.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
-            </article>
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-img-container">
+                        <img src="https://m.media-amazon.com/images/I/71Xv686+iGL.jpg" alt="Couverture">
+                    </div>
+                    <div class="book-details">
+                        <h4>Tess of the Road</h4>
+                        <div class="rating">★★★★☆</div>
+                        <p class="book-author">James Clear</p>
+                    </div>
+                </div>
+                </div>
+        </main>
 
-            <article class="card">
-                <h3 class="card-title">Chroniques du Frontend</h3>
-                <p class="card-subtitle">Aventure • Par Junior_Coder</p>
-                <p class="card-text">Le périple d'un div rebelle qui cherchait à s'échapper du flux de son conteneur parent pour trouver sa liberté absolue.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
-            </article>
+        <aside class="sidebar-right">
+            <div class="quotes-sidebar">
+                <h3>Citations</h3>
+                <div class="quote-item">"La lecture est une amitié."</div>
+                <div class="quote-item">"Un livre est une fenêtre."</div>
+            </div>
+        </aside>
+    </div>
 
-        </div>
-    </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggleBtn = document.getElementById('theme-toggle');
-            
-            // Écouteur d'événement sur le bouton
-            themeToggleBtn.addEventListener('click', () => {
-                // Bascule la classe 'light' sur l'élément <body>
-                document.body.classList.toggle('light');
-                
-                // Optionnel : Changer le texte du bouton en fonction du thème
-                if (document.body.classList.contains('light')) {
-                    themeToggleBtn.innerText = 'Mode Sombre';
-                } else {
-                    themeToggleBtn.innerText = 'Mode Clair';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
