@@ -10,7 +10,16 @@
 <body>
 
     <header class="main-header">
-        <h1 class="logo">PA<span>SK</span></h1>
+        <header class="main-header">
+            <!-- Le bouton Hamburger -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <h1 class="logo">PA<span>SK</span></h1>
+        </header>
+        
         <div class="user-profile">
             <span class="username">Mon compte</span>
             <div class="avatar">
@@ -31,72 +40,242 @@
 
         <!-- AU CENTRE -->
         <main class="content-center">
+            
+            
             <section class="classic-book-section">
-                <div class="classic-container">
-                    <!-- GAUCHE : Nom de l'auteur -->
-                    <div class="author-sidebar">
-                        <span class="vertical-author">ALBERT CAMUS</span>
-                    </div>
-
-                    <!-- CENTRE : Image du livre -->
-                    <div class="main-book-wrapper">
-                        <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="L'Étranger" class="main-book-img">
-                    </div>
+                <div class="slider-container">
+                    <!-- Bouton Gauche -->
+                    <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
                     
-                    <!-- DROITE : Résumé et Citation -->
-                    <div class="book-details">
-                        <p class="book-badge">Roman Classique</p>
-                        <h3>Résumé du livre</h3>
-                        <p class="summary-text">C’est l’histoire de Meursault, un homme qui vit en Algérie. Il semble indifférent à tout, même à la mort de sa mère.
+                    <div class="classic-slider" id="classic-slider">
+                        
+                        <!-- LIVRE 1 : L'Étranger -->
+                        <div class="classic-container">
+                            <div class="author-sidebar">
+                                <span class="vertical-author">ALBERT CAMUS</span>
+                            </div>
+                            <div class="main-book-wrapper">
+                                <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="L'Étranger" class="main-book-img">
+                            </div>
+                            <div class="book-details">
+                                <p class="book-badge">Roman Classique</p>
+                                <h3>Résumé du livre</h3>
+                                <p class="summary-text">Meursault, un homme indifférent au monde, commet un meurtre sous le soleil d'Alger...</p>
+                                <blockquote class="legendary-quote">
+                                    "Pour la première fois... j’ai eu une envie stupide de pleurer."
+                                </blockquote>
+                            </div>
+                        </div>
 
-                            Un jour, sur une plage, il tue un homme presque sans raison claire. Il est alors arrêté et jugé.
+                        <!-- LIVRE 2  -->
+                        <div class="classic-container">
+                            <div class="author-sidebar">
+                                <span class="vertical-author">VICTOR HUGO</span>
+                            </div>
+                            <div class="main-book-wrapper">
+                                <img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg" alt="Autre Livre" class="main-book-img">
+                            </div>
+                            <div class="book-details">
+                                <p class="book-badge">Chef-d'œuvre</p>
+                                <h3>Les Misérables</h3>
+                                <p class="summary-text">Le destin croisé de Jean Valjean dans une France en pleine révolution sociale...</p>
+                                <blockquote class="legendary-quote">
+                                    "Même la nuit la plus sombre prendra fin."
+                                </blockquote>
+                            </div>
+                        </div>
 
-                            Mais pendant le procès, ce n’est pas seulement son crime qui est jugé : c’est surtout son comportement, son manque d’émotion et sa façon de voir la vie.
-
-                            À la fin, Meursault accepte son destin et comprend que la vie n’a pas vraiment de sens profond, mais qu’il faut l’accepter telle qu’elle est.</p>
-                        <blockquote class="legendary-quote">
-                            "Pour la première fois depuis bien des années, j’ai eu une envie stupide de pleurer parce que j’ai senti combien j’étais détesté par tous ces gens-là."
-                        </blockquote>
                     </div>
+
+                    <!-- Bouton Droite -->
+                    <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
                 </div>
             </section>
 
-            <h2 class="category-title" style="margin: 30px 0 20px 0;">ROMAN</h2>
+            <!-- SECTION DES ÉTAGES (4 GROUPES DE 4) -->
+            <div class="floors-container">
+                
+                <!-- ÉTAGE DES RECOMMANDATIONS -->
+                <div class="book-floor">
+                    <h2 class="category-title">NOS RECOMMANDATIONS</h2>
+                    
+                   <div class="mini-classic-grid">
+    
+                        <!-- Item 1 : Camus -->
+                        <div class="mini-classic-item">
+                            <div class="mini-author">ALBERT CAMUS</div>
+                            <div class="mini-img-wrapper">
+                                <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="L'Étranger">
+                                <div class="recommendation-badge">Pépite</div>
+                            </div>
+                            <div class="mini-details">
+                                <h4>L'Étranger</h4>
+                                <p class="mini-summary">Une exploration fascinante de l'absurdité humaine à travers le destin de Meursault.</p>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
 
-            <div class="books-grid">
-                <div class="book-item">
-                    <div class="book-cover-wrapper"><img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg"></div>
-                    <div class="book-info">
-                        <p class="author">James Clear</p>
-                        <p class="summary-short">Comment de petits changements peuvent transformer votre vie.</p>
-                        <div class="stars">★★★★★</div>
+                        <!-- Item 2 : Hugo -->
+                        <div class="mini-classic-item">
+                            <div class="mini-author">VICTOR HUGO</div>
+                            <div class="mini-img-wrapper">
+                                <img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg" alt="Les Misérables">
+                            </div>
+                            <div class="mini-details">
+                                <h4>Les Misérables</h4>
+                                <p class="mini-summary">Un combat éternel pour la justice, la rédemption et l'amour dans une France tourmentée.</p>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 : James Clear -->
+                        <div class="mini-classic-item">
+                            <div class="mini-author">JAMES CLEAR</div>
+                            <div class="mini-img-wrapper">
+                                <img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg" alt="Atomic Habits">
+                                <div class="recommendation-badge">Best-Seller</div>
+                            </div>
+                            <div class="mini-details">
+                                <h4>Atomic Habits</h4>
+                                <p class="mini-summary">Comment de petits changements atomiques peuvent transformer votre vie durablement.</p>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 : Cal Newport -->
+                        <div class="mini-classic-item">
+                            <div class="mini-author">CAL NEWPORT</div>
+                            <div class="mini-img-wrapper">
+                                <img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg" alt="Deep Work">
+                            </div>
+                            <div class="mini-details">
+                                <h4>Deep Work</h4>
+                                <p class="mini-summary">Retrouvez votre concentration profonde dans un monde de distractions numériques.</p>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover-wrapper"><img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg"></div>
-                    <div class="book-info">
-                        <p class="author">Cal Newport</p>
-                        <p class="summary-short">Retrouvez votre concentration dans un monde de distractions.</p>
-                        <div class="stars">★★★★☆</div>
+                </div> 
+                                    <!-- ÉTAGE PHILOSOPHIE & SAGESSE (GRILLE 2x3) -->
+                    <div class="book-floor" style="margin-top: 80px;">
+                        <h2 class="category-title">PHILOSOPHIE & SAGESSE</h2>
+                        
+                        <div class="philosophy-grid-double">
+                            
+                            <!-- LIGNE 1 -->
+                            <div class="philo-card">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Stoïcisme</span>
+                                    <h4>Pensées pour moi-même</h4>
+                                    <span class="philo-author">MARC AURÈLE</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg"></div>
+                            </div>
+
+                            <div class="philo-card reverse">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Existentialisme</span>
+                                    <h4>L'Être et le Néant</h4>
+                                    <span class="philo-author">J.P. SARTRE</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg"></div>
+                            </div>
+
+                            <!-- LIGNE 2 -->
+                            <div class="philo-card reverse">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Idéalisme</span>
+                                    <h4>La République</h4>
+                                    <span class="philo-author">PLATON</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg"></div>
+                            </div>
+
+                            <div class="philo-card">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Éthique</span>
+                                    <h4>Ainsi parlait Zarathoustra</h4>
+                                    <span class="philo-author">F. NIETZSCHE</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/L'écriture ou la vie de Jorge Semprun_ Meilleure lecture cette année.jpeg"></div>
+                            </div>
+
+                            <!-- LIGNE 3 -->
+                            <div class="philo-card">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Sagesse</span>
+                                    <h4>Le Prophète</h4>
+                                    <span class="philo-author">KAHLIL GIBRAN</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg"></div>
+                            </div>
+
+                            <div class="philo-card reverse">
+                                <div class="philo-content">
+                                    <span class="philo-tag">Politique</span>
+                                    <h4>Le Prince</h4>
+                                    <span class="philo-author">NICOLAS MACHIAVEL</span>
+                                </div>
+                                <div class="philo-img"><img src="./IMG/KEVIN.jpg"></div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover-wrapper"><img src="./IMG/L'écriture ou la vie de Jorge Semprun_ Meilleure lecture cette année.jpeg"></div>
-                    <div class="book-info">
-                        <p class="author">Daniel Kahneman</p>
-                        <p class="summary-short">Les deux modes de pensée qui dirigent notre jugement.</p>
-                        <div class="stars">★★★★★</div>
+                                                            <!-- SECTION AMOUR & PASSION -->
+                    <div class="book-floor" style="margin-top: 80px;">
+                        <h2 class="category-title" style="color: #d63384; text-align: center; letter-spacing: 4px;">AMOUR & PASSION</h2>
+                        
+                        <div class="passion-grid-uniform">
+                            
+                            <!-- LIVRE 1 -->
+                            <div class="passion-item">
+                                <div class="passion-card">
+                                    <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="Livre">
+                                    <div class="passion-overlay">
+                                        <span class="heart-pulse">❤️</span>
+                                    </div>
+                                </div>
+                                <div class="passion-meta">
+                                    <h4>Orgueil et Préjugés</h4>
+                                    <p>JANE AUSTEN</p>
+                                </div>
+                            </div>
+
+                            <!-- LIVRE 2 -->
+                            <div class="passion-item">
+                                <div class="passion-card">
+                                    <img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg" alt="Livre">
+                                    <div class="passion-overlay">
+                                        <span class="heart-pulse">❤️</span>
+                                    </div>
+                                </div>
+                                <div class="passion-meta">
+                                    <h4>Belle du Seigneur</h4>
+                                    <p>ALBERT COHEN</p>
+                                </div>
+                            </div>
+
+                            <!-- LIVRE 3 -->
+                            <div class="passion-item">
+                                <div class="passion-card">
+                                    <img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg" alt="Livre">
+                                    <div class="passion-overlay">
+                                        <span class="heart-pulse">❤️</span>
+                                    </div>
+                                </div>
+                                <div class="passion-meta">
+                                    <h4>Roméo et Juliette</h4>
+                                    <p>W. SHAKESPEARE</p>
+                                </div>
+                            </div>
+
+                        
+
+                        </div>
                     </div>
-                </div>
-                <div class="book-item">
-                    <div class="book-cover-wrapper"><img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg"></div>
-                    <div class="book-info">
-                        <p class="author">Antoine de Saint-Exupéry</p>
-                        <p class="summary-short">Un guide d'éveil spirituel pour apprendre à vivre le présent.</p>
-                        <div class="stars">★★★★☆</div>
-                    </div>
-                </div>
-            </div>
+            </div> 
+
         </main>
 
         <!-- DROITE -->
@@ -144,6 +323,38 @@
             </div>
         </aside>
     </div>
+   <footer class="pask-footer">
+        <div class="footer-left">
+            <h2>PASK</h2>
+        </div>
 
+        <div class="footer-center">
+            <p>Lire des livres</p>
+            <p class="highlight">Lire délivre</p>
+        </div>
+
+        <div class="footer-right">
+            <div class="icons">
+                <span>IG</span> <span>FB</span> <span>TW</span>
+            </div>
+            <p class="email">support: <span>contact@pask.com</span></p>
+        </div>
+    </footer>
+     
 </body>
+<script>
+    const slider = document.getElementById("classic-slider");
+    const prevButton = document.getElementById("slide-arrow-prev");
+    const nextButton = document.getElementById("slide-arrow-next");
+
+    nextButton.addEventListener("click", () => {
+        const slideWidth = slider.clientWidth;
+        slider.scrollLeft += slideWidth;
+    });
+
+    prevButton.addEventListener("click", () => {
+        const slideWidth = slider.clientWidth;
+        slider.scrollLeft -= slideWidth;
+    });
+</script>
 </html>
