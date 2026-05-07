@@ -93,6 +93,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  align-content: center;
 }
 
 .text-muted {
@@ -116,6 +117,7 @@ body {
 }
 
 .btn-primary {
+  margin-top: auto;
   background-color: var(--primary);
   color: var(--bg-dark); /* Contraste sur le bouton primary */
 }
@@ -126,7 +128,7 @@ body {
   border: 1px solid var(--border);
 }
 
-/* Système de grille pour les livres/histoires */
+/* Système de grille pour les genres romanesques */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -136,6 +138,7 @@ body {
 
 /* Composant : Card */
 .card {
+
   background-color: var(--bg-light);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -165,4 +168,46 @@ body {
 .card-text {
   margin-bottom: 1.5rem;
   color: var(--text-muted);
+}
+
+.special {
+  font-style: normal;
+}
+
+.livres_img {
+  width: 600px;  /* Largeur fixe */
+  /*display: block;   /* Force l'image à prendre toute la ligne */
+  margin: 0 auto;   /* 0 en haut/bas, auto à gauche/droite pour centrer */
+}
+
+section.genres {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;   /* Taille légèrement augmentée pour le confort */
+  line-height: 1.6;    /* Espacement des lignes pour l'aspect roman */
+  color: #15375a;      /* Un gris très sombre, plus doux que le noir pur */
+  text-align: justify; /* Pour un look "page de livre" */
+}
+
+section.genres h2 {
+  font-weight: 700;
+  font-style: italic;  /* L'italique renforce l'aspect romanesque */
+  font-size: 2.5rem;
+}
+
+.presentation {
+  width: 800px;
+  padding-right: 50px;
+}
+
+.container-hero {
+  width: calc(100%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.begin {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  margin: 0 auto;   /* On centre le bloc horizontalement sur la page */
 }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lipens | Accueil</title>
+    <title>PASK | Accueil</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <!-- Ajouter votre style Ici -->
     
     <!--<link rel="stylesheet" href="css/index.css"> -->
@@ -13,47 +14,148 @@
 <body>
 
     <header class="container" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-muted);">
-        <h1>📚 Lipens</h1>
+        <h1>📚 PASK</h1>
         
         <button id="theme-toggle" class="btn btn-secondary">
-            Basculer le Thème (Clair/Sombre)
+            Mode clair
         </button>
     </header>
-
+ 
     <main class="container">
         
-        <section style="margin-bottom: 3rem; text-align: center;">
-            <h2 style="color: var(--primary); margin-bottom: 1rem; font-size: 2rem;">Découvrez de nouvelles histoires</h2>
-            <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
-                Ceci est une page d'exemple montrant comment utiliser notre design system. 
-                Remarquez comment les couleurs s'adaptent automatiquement au thème choisi.
-            </p>
+        <section style="margin-bottom: 8rem; border-bottom: 1px solid var(--border-muted); padding-bottom: 30px;">
+            <div class="container-hero">
+                <article class="presentation">
+                    <h2 style="color: var(--primary); margin-bottom: 2rem; font-size: 3rem; padding-bottom: 50px;">
+                    Votre <strong>Bibliothèque</strong>, Votre <strong>Rythme</strong>!
+                    </h2>
+                    <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
+                    Bienvenue sur <strong>PASK</strong>, l’espace dédié aux passionnés de lecture et d’écriture. 
+                    Découvrez des histoires uniques, partagez vos créations et vivez votre amour des livres autrement.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="ChatGPT Image 22 avr. 2026, 00_08_32.png" alt="Livres" class="livres_img">
+                </article>
+                
+            </div>
+            
         </section>
 
-        <div class="grid">
-            
+        <div class="begin" style="padding: 3rem; padding-bottom: 12rem; border-bottom: 1px solid var(--border-muted);">
+            <a href="#" class="btn btn-primary" style="padding: 3rem; size: 4rem;">Commencer</a>
+        </div>
+
+        <section style="margin: auto; margin-bottom: 3rem; padding-top: 6rem;" class="genres">
+            <h2>
+                Plongez-vous dans les différents genres romanesques!
+            </h2>
+        </section>
+
+        <div class="grid" style="border-bottom: 1px solid var(--border-muted); padding-bottom: 50px;">
+             
             <article class="card">
-                <h3 class="card-title">L'Écho du Silence</h3>
-                <p class="card-subtitle">Science-Fiction • Par Alex Dev</p>
-                <p class="card-text">Dans un futur où le son est monétisé, une jeune développeuse découvre une fréquence gratuite qui pourrait tout changer.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
+                <h3 class="card-title">Policier 🕵️🔍</h3>
+                <p class="card-subtitle">Mystère Captivant</p>
+                <p class="card-text">
+                    Entrez dans l’univers troublant du mystère, 
+                    là où chaque regard dissimule un secret et où la vérité se cache derrière les apparences. 
+                    Le roman policier captive l’esprit, aiguise la curiosité et vous convie à une enquête palpitante où le moindre détail peut devenir décisif. 
+                    Entre crimes énigmatiques, indices subtils et révélations saisissantes, ce genre promet une tension savoureuse jusqu’à la dernière page.
+                </p>
+                <a href="#" class="btn btn-primary" >Découvrir</a>
+            </article>
+
+
+            <article class="card">
+                <h3 class="card-title">Romance ❤️🌹</h3>
+                <p class="card-subtitle">Passion sincère</p>
+                <p class="card-text">
+                    Le roman romantique célèbre la puissance des sentiments, 
+                    la délicatesse des rencontres et la beauté des liens qui unissent les âmes. 
+                    Entre passions ardentes, obstacles poignants et instants de grâce, 
+                    ce genre transporte le lecteur dans un univers où le cœur triomphe souvent des épreuves. 
+                    Une invitation à rêver, espérer et vibrer.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
             </article>
 
             <article class="card">
-                <h3 class="card-title">Le Code Oublié</h3>
-                <p class="card-subtitle">Mystère • Par Jane Doe</p>
-                <p class="card-text">Un ancien algorithme trouvé dans les archives du serveur révèle des secrets enfouis depuis des décennies sur la création de l'IA.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
+                <h3 class="card-title">Aventure 🗺️⚔️</h3>
+                <p class="card-subtitle">Évasion Héroïque</p>
+                <p class="card-text">
+                    Le roman d’aventure est l’appel du large, 
+                    le goût du risque et la promesse de terres inconnues. 
+                    Tempêtes, trésors, jungles lointaines ou contrées inexplorées deviennent le théâtre d’épreuves exaltantes. 
+                    Une lecture vibrante pour les esprits intrépides avides de liberté.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
             </article>
 
             <article class="card">
-                <h3 class="card-title">Chroniques du Frontend</h3>
-                <p class="card-subtitle">Aventure • Par Junior_Coder</p>
-                <p class="card-text">Le périple d'un div rebelle qui cherchait à s'échapper du flux de son conteneur parent pour trouver sa liberté absolue.</p>
-                <a href="#" class="btn btn-primary">Lire le chapitre 1</a>
+                <h3 class="card-title">Fantasy 🐉✨</h3>
+                <p class="card-subtitle">Magie Épique</p>
+                <p class="card-text">
+                    Ouvrez les portes de mondes oubliés où la magie 
+                    respire encore dans les forêts anciennes et où les légendes prennent chair. 
+                    La fantasy convie le lecteur à de grandes quêtes, peuplées de héros courageux, 
+                    de créatures fabuleuses et de royaumes fascinants. 
+                    Un genre majestueux pour ceux qui aspirent à l’évasion absolue.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
+            </article>
+
+            <article class="card">
+                <h3 class="card-title">Fantastique 👁️🌫️</h3>
+                <p class="card-subtitle">ÉTrange, troublant</p>
+                <p class="card-text">
+                    Dans le fantastique, le réel vacille soudain sous l’irruption de l’étrange. 
+                    Une présence invisible, un murmure inexpliqué, 
+                    une ombre qui persiste… Le lecteur avance entre doute et fascination, 
+                    sans jamais savoir si la raison suffira à éclairer les ténèbres. 
+                    Une expérience troublante et envoûtante.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
+            </article>
+
+            <article class="card">
+                <h3 class="card-title">Science-Fiction 🚀🤖</h3>
+                <p class="card-subtitle">futur fascinant</p>
+                <p class="card-text">
+                    La science-fiction interroge demain avec audace. 
+                    Elle explore les frontières du possible, 
+                    imagine des civilisations nouvelles, 
+                    des technologies prodigieuses et des destins suspendus entre progrès et péril. 
+                    Ce genre stimule l’intelligence autant qu’il l'émerveille, 
+                    en offrant des voyages vertigineux vers l’inconnu.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
+            </article>
+
+            <article class="card">
+                <h3 class="card-title">Fan-Fiction ✍️🌌</h3>
+                <p class="card-subtitle">univers réinventés</p>
+                <p class="card-text">
+                    La fan-fiction ouvre les portes d’univers déjà aimés pour leur offrir de nouveaux horizons. 
+                    Héros légendaires, romances inattendues, intrigues inédites ou destins revisités : 
+                    tout devient possible sous la plume des passionnés. 
+                    Ce genre vibrant permet de prolonger la magie d’une œuvre tout en laissant libre cours à l’imagination la plus fertile. 
+                    Une lecture aussi familière que surprenante, 
+                    où chaque page ranime des mondes chers au cœur des lecteurs.
+                </p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
             </article>
 
         </div>
+
+        <section style="margin-bottom: 3rem; padding-top: 15rem;" class="genres">
+            <h2>
+                Commencez à rédiger vos premières oeuvres en toute liberté et créativité!
+            </h2>
+        </section>
+
+        <img src="ChatGPT Image 7 mai 2026, 01_39_53.png" alt="write" style="width: 930px; margin: auto;">
     </main>
 
     <script>
