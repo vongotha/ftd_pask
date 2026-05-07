@@ -211,3 +211,40 @@ section.genres h2 {
   align-items: center;     /* Centre verticalement */
   margin: 0 auto;   /* On centre le bloc horizontalement sur la page */
 }
+
+.principal {
+  display: flex;
+  min-height: 100vh; /* Toute la hauteur de l'écran */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--bg-light);
+  color: var(--text);
+  padding: 20px;
+  /* Optionnel : fixe la barre pendant le scroll */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 30px 0;
+}
+
+.sidebar a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  transform: translateX(10px);
+}
