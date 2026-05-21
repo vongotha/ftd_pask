@@ -13,38 +13,41 @@
 </head>
 <body>
 
-    <header class="container" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-muted);">
-        <h1>📚 PASK</h1>
-        
-        <button id="theme-toggle" class="btn btn-secondary">
-            Mode clair
-        </button>
-    </header>
+    <!--header class="container" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-muted);">
+    </header-->
 
     <div class="principal">
 
         <nav class="sidebar">
+            <h1>📚 PASK</h1>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Parcourir</a></li>
                 <li><a href="#">Communauté</a></li>
                 <li><a href="#">Se connecter</a></li>
             </ul>
+            <button id="theme-toggle" class="btn btn-secondary">
+                Mode clair
+            </button>
         </nav>
 
         <main class="container">
         
-        <section style="margin-bottom: 8rem; border-bottom: 1px solid var(--border-muted); padding-bottom: 30px;">
+        <section style="margin-bottom: 4rem; border-bottom: 1px solid var(--border-muted); padding-bottom: 30px;">
             <div class="container-hero">
-                <article class="presentation">
-                    <h2 style="color: var(--primary); margin-bottom: 2rem; font-size: 3rem; padding-bottom: 50px;">
-                    Votre <strong>Bibliothèque</strong>, Votre <strong>Rythme</strong>!
-                    </h2>
-                    <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
-                    Bienvenue sur <strong>PASK</strong>, l’espace dédié aux passionnés de lecture et d’écriture. 
-                    Découvrez des histoires uniques, partagez vos créations et vivez votre amour des livres autrement.
-                    </p>
+                <div>
+                    <article class="presentation">
+                        <h2 style="color: var(--primary); margin-bottom: 2rem; font-size: 3rem; padding-bottom: 50px;">
+                        Votre <strong>Bibliothèque</strong>, Votre <strong>Rythme</strong>!
+                        </h2>
+                        <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
+                        Bienvenue sur <strong>PASK</strong>, l’espace dédié aux passionnés de lecture et d’écriture. 
+                        Découvrez des histoires uniques, partagez vos créations et vivez votre amour des livres autrement.
+                        </p>
                 </article>
+
+                <a href="#" class="btn btn-primary" style="margin-top: 3rem;">Commencer</a>
+                </div>
 
                 <article>
                     <img src="ChatGPT Image 22 avr. 2026, 00_08_32.png" alt="Livres" class="livres_img">
@@ -54,17 +57,18 @@
             
         </section>
 
-        <div class="begin" style="padding: 3rem; padding-bottom: 12rem; border-bottom: 1px solid var(--border-muted);">
+        <!--div class="begin" style="padding: 3rem; padding-bottom: 12rem; border-bottom: 1px solid var(--border-muted);">
             <a href="#" class="btn btn-primary" style="padding: 3rem; size: 4rem;">Commencer</a>
-        </div>
+        </div-->
 
-        <section style="margin: auto; margin-bottom: 3rem; padding-top: 6rem;" class="genres">
-            <h2>
+        <section style="margin: auto; margin-bottom: 6rem; padding-top: 3rem;" class="genres">
+            <h2 style="text-align: center;">
                 Plongez-vous dans les différents genres romanesques!
             </h2>
         </section>
 
-        <div class="grid" style="border-bottom: 1px solid var(--border-muted); padding-bottom: 50px;">
+        <div class="grid" style="border-bottom: 1px solid var(--border-muted); padding-bottom: 50px; 
+        margin-bottom: 6rem;">
              
             <article class="card">
                 <h3 class="card-title">Policier 🕵️🔍</h3>
@@ -160,15 +164,91 @@
 
         </div>
 
-        <section style="margin-bottom: 3rem; padding-top: 15rem;" class="genres">
-            <h2>
-                Commencez à rédiger vos premières oeuvres en toute liberté et créativité!
-            </h2>
-        </section>
+                <!-- Section dédiée aux auteurs -->
+        <section class="espace-auteurs">
+        
+            <section style="margin-bottom: 3rem;" class="genres">
+                <h2 style="text-align: center;">
+                    Commencez à rédiger vos premières oeuvres en toute liberté et créativité!
+                </h2>
+            </section>
 
-        <img src="ChatGPT Image 7 mai 2026, 01_39_53.png" alt="write" style="width: 930px; margin: auto;">
+            <img src="ChatGPT Image 7 mai 2026, 01_39_53.png" alt="write" style="width: 930px; margin: auto;">
+
+        <div class="auteurs-en-tete">
+            <h2>Donnez vie à vos histoires</h2>
+            <p>Rejoignez une communauté bienveillante et profitez d'outils pensés pour l'écriture.</p>
+        </div>
+
+        <!-- Conteneur principal pour nos 3 cartes -->
+        <div class="auteurs-grille">
+            
+            <!-- Carte 1 : Les outils -->
+            <div class="carte-auteur">
+                <div class="icone">✍️</div>
+                <h3 class="card-subtitle">Éditeur sans distraction</h3>
+                <p style="color: var(--text-muted);">Concentrez-vous sur vos mots. Notre éditeur sauvegarde automatiquement vos chapitres et s'adapte à votre rythme, que ce soit sur PC ou mobile.</p>
+            </div>
+
+            <!-- Carte 2 : Les concours (Mise en avant) -->
+            <div class="carte-auteur carte-concours">
+                <span class="badge">En cours</span>
+                <h3>Défi d'écriture de l'été</h3>
+                <p style="color: var(--text-muted);">Thème : "Le secret du vieux phare". Participez avant le 31 août pour tenter d'être mis en avant sur la page d'accueil pendant un mois !</p>
+            </div>
+
+            <!-- Carte 3 : La preuve sociale -->
+            <div class="carte-auteur">
+                <div class="icone">📈</div>
+                <h3>Trouvez votre public</h3>
+                <p style="color: var(--text-muted);">Déjà <strong>+5 000 auteurs</strong> ont publié leurs récits ici. Profitez de statistiques détaillées pour voir quels chapitres captivent le plus vos lecteurs.</p>
+            </div>
+
+        </div>
+
+        <!-- Bouton d'action principal -->
+        <div class="auteurs-action">
+            <a href="#" class="bouton-ecrire">Commencer à écrire</a>
+        </div>
+
+        </section>
     </main>
     </div>
+
+    <footer class="site-footer">
+        <div class="footer-colonnes">
+        
+            <!-- Colonne 1 : Communauté -->
+            <div class="colonne">
+                <h3>Communauté</h3>
+                <a href="#">Le Blog</a>
+                <a href="#">Forum des auteurs</a>
+                <a href="#">Discord</a>
+            </div>
+
+            <!-- Colonne 2 : Aide & Guides -->
+            <div class="colonne">
+                <h3>Aide & Guides</h3>
+                <a href="#">Comment publier ?</a>
+                <a href="#">Règlement</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <!-- Colonne 3 : Légal -->
+            <div class="colonne">
+                <h3>Légal</h3>
+                <a href="#">Conditions d'utilisation</a>
+                <a href="#">Confidentialité</a>
+                <a href="#">Droits d'auteur</a>
+            </div>
+
+        </div>
+
+    <!-- Ligne de copyright -->
+        <div class="footer-bas">
+            <p>&copy; 2026 PASK. Tous droits réservés.</p>
+        </div>
+    </footer>
  
 
     <script>
