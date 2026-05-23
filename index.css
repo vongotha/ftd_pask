@@ -100,6 +100,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  align-content: center;
 }
 
 .text-muted {
@@ -123,6 +124,7 @@ body {
 }
 
 .btn-primary {
+  margin-top: auto;
   background-color: var(--primary);
   color: var(--bg-dark); /* Contraste sur le bouton primary */
 }
@@ -133,7 +135,7 @@ body {
   border: 1px solid var(--border);
 }
 
-/* Système de grille pour les livres/histoires */
+/* Système de grille pour les genres romanesques */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -143,6 +145,7 @@ body {
 
 /* Composant : Card */
 .card {
+
   background-color: var(--bg-light);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -172,4 +175,329 @@ body {
 .card-text {
   margin-bottom: 1.5rem;
   color: var(--text-muted);
+}
+
+.special {
+  font-style: normal;
+}
+
+.livres_img {
+  width: 600px;  /* Largeur fixe */
+  /*display: block;   /* Force l'image à prendre toute la ligne */
+  margin: 0 auto;   /* 0 en haut/bas, auto à gauche/droite pour centrer */
+}
+
+section.genres {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;   /* Taille légèrement augmentée pour le confort */
+  line-height: 1.6;    /* Espacement des lignes pour l'aspect roman */
+  color: #15375a;      /* Un gris très sombre, plus doux que le noir pur */
+  text-align: justify; /* Pour un look "page de livre" */
+}
+
+section.genres h2 {
+  font-weight: 700;
+  /*font-style: italic;  /* L'italique renforce l'aspect romanesque */
+  font-size: 2.5rem;
+}
+
+.presentation {
+  width: 500px;
+}
+
+.container-hero {
+  width: calc(100%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.begin {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  margin: 0 auto;   /* On centre le bloc horizontalement sur la page */
+}
+
+.principal {
+  display: flex;
+  min-height: 100vh; /* Toute la hauteur de l'écran */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--bg-light);
+  color: var(--text);
+  padding: 20px;
+  /* Optionnel : fixe la barre pendant le scroll */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 30px 0;
+}
+
+.sidebar a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  transform: translateX(10px);
+}
+
+/* Style global du pied de page */
+.site-footer {
+    background-color: #2c3e50; /* Un bleu-gris foncé très élégant */
+    color: #ecf0f1; /* Un texte presque blanc pour le contraste */
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* Alignement des colonnes avec Flexbox */
+.footer-colonnes {
+    display: flex;
+    justify-content: space-around; /* Espace équitablement les colonnes */
+    max-width: 1000px;
+    margin: 0 auto; /* Centre le conteneur sur les grands écrans */
+    padding-bottom: 30px;
+}
+
+/* Style de chaque colonne */
+.colonne {
+    display: flex;
+    flex-direction: column; /* Place les liens les uns sous les autres */
+    gap: 10px; /* Espace entre chaque lien */
+}
+
+/* Style des titres des colonnes */
+.colonne h3 {
+    color: #3498db; /* Un bleu plus vif pour attirer l'œil */
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Style des liens */
+.colonne a {
+    color: #bdc3c7;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    transition: color 0.3s ease; /* Animation douce au survol */
+}
+
+/* Effet au survol de la souris */
+.colonne a:hover {
+    color: #ffffff; /* Le lien devient blanc brillant */
+}
+
+/* Zone de copyright tout en bas */
+.footer-bas {
+    background-color: #1a252f; /* Une teinte encore plus sombre */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* --- SECTION GLOBALE --- */
+.espace-auteurs {
+    background-color: var(--bg); /* Un gris très clair pour séparer visuellement cette zone */
+    padding: 60px 20px; /* De l'espace en haut/bas et sur les côtés */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centre le texte principal */
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.auteurs-en-tete h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.auteurs-en-tete p {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* --- DISPOSITION DES CARTES (FLEXBOX) --- */
+.auteurs-grille {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* L'espace entre chaque carte */
+    max-width: 1100px;
+    margin: 0 auto; /* Centre la grille sur la page */
+}
+
+/* --- STYLE DE CHAQUE CARTE --- */
+.carte-auteur {
+    /*background-color: #ffffff; /* Fond blanc pur pour contraster avec le gris clair */
+    border-radius: 12px; /* Bords arrondis */
+    padding: 30px;
+    width: 30%; /* Chaque carte prend 30% de la largeur */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Ombre douce pour donner du relief */
+    transition: transform 0.3s ease; /* Animation fluide */
+    text-align: left; /* Aligne le texte des cartes à gauche */
+    position: relative; /* Nécessaire pour placer le badge du concours */
+    background-color: var(--bg-light);
+    border: 1px solid var(--border);
+    /*border-radius: 8px;*/
+    /*padding: 1.5rem;*/
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Effet au survol : la carte se soulève légèrement */
+.carte-auteur:hover {
+    transform: translateY(-5px);
+}
+
+.carte-auteur .icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.carte-auteur h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.carte-auteur p {
+    color: #555;
+    line-height: 1.6; /* Rend le texte plus lisible */
+}
+
+/* --- MISE EN ÉVIDENCE DE LA CARTE CONCOURS --- */
+.carte-concours {
+    border: 2px solid #3498db; /* Une bordure bleue pour attirer l'œil */
+}
+
+/* Le petit badge "En cours" */
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #e74c3c; /* Rouge vif */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* --- BOUTON D'ACTION --- */
+.auteurs-action {
+    margin-top: 50px;
+}
+
+.bouton-ecrire {
+    background-color: var(--primary); /* Vert pour signifier "Go / Création" */
+    color: var(--bg);
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px; /* Bouton en forme de pilule */
+    transition: background-color 0.3s;
+}
+
+.bouton-ecrire:hover {
+    background-color: var(--info); /* Vert plus clair au survol */
+}
+
+/* ============================================================
+   1. STRUCTURE GLOBALE (Garder le footer en bas)
+   ============================================================ */
+/*body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Le body prend au minimum toute la hauteur de l'écran */
+/*}
+
+/* Le conteneur central prend tout l'espace disponible et pousse le footer en bas */
+/*.principal {
+    display: flex;
+    flex-direction: row; /* Sur ordinateur : la nav et le main sont côte à côte */
+    /*flex: 1; 
+}
+
+/* ============================================================
+   2. MISE EN PAGE SUR ORDINATEUR (Desktop)
+   ============================================================ */
+/*.sidebar {
+    width: 250px; /* Largeur fixe pour ton menu latéral */
+    /*background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    /* Optionnel : pour que le menu reste visible si on descend sur la page */
+    /*position: sticky; 
+    top: 0;
+    height: 100vh; 
+}
+
+.container {
+    flex: 1; /* Le main prend tout le reste de la largeur de l'écran */
+    /*padding: 20px;
+}
+
+/* ============================================================
+   3. RESPONSIVE DESIGN (Tablettes et Téléphones)
+   ============================================================ */
+@media (max-width: 768px) {
+    
+    /* Le secret est ici : on passe de côte à côte à empilé ! */
+    .principal {
+        flex-direction: column; 
+    }
+
+    /* La navigation ne fait plus 250px, mais prend toute la largeur */
+    .sidebar {
+        width: 100%;
+        height: auto; /* Elle s'adapte à son contenu au lieu de prendre tout l'écran */
+        position: static; /* Annule l'effet sticky sur mobile */
+        padding: 10px;
+
+        /* Transformer la nav en Flexbox*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px; /*Espace entre les liens*/
+    }
+    .sidebar ul {
+      display: flex;
+      flex-direction: row;
+    }
+    .sidebar a {
+        font-size: 14px; /* Texte plus petit */
+        padding: 5px 10px; /* Moins de marge autour du texte */
+        text-align: center;
+    }
+    .sidebar a :hover {
+      transform: translateY(5px) !important;
+    }
+
+    /* Optionnel : réduire un peu les marges du contenu sur petit écran */
+    .container {
+        padding: 15px 10px;
+    }
+
+    /* Applique cette règle à absolument tous les éléments de la page */
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    /* Empêche les images de dépasser de leurs conteneurs */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
