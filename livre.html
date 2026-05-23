@@ -1,360 +1,684 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Livres</title>
-    <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="livre.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Pask | Livres</title>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="livre.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <header class="main-header">
-            <!-- Le bouton Hamburger -->
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <h1 class="logo">PA<span>SK</span></h1>
-        </header>
-        
-        <div class="user-profile">
-            <span class="username">Mon compte</span>
-            <div class="avatar">
-                <img src="./IMG/KEVIN.jpg" alt="Photo de profil">
-            </div>
+<header>
+
+    <div class="container navbar">
+
+        <div class="logo">
+        Pask
         </div>
-    </header>
 
-    <div class="page-layout">
-        <!-- PARTIE GAUCHE -->
-        <aside class="sidebar-left">
-            <nav class="side-menu">
-                <a href="#" class="active">Accueil</a>
-                <a href="#">Mes livres</a>
-                <a href="#">Contact</a>
-            </nav>
-        </aside>
+        <nav class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        </nav>
 
-        <!-- AU CENTRE -->
-        <main class="content-center">
-            
-            
-            <section class="classic-book-section">
-                <div class="slider-container">
-                    <!-- Bouton Gauche -->
-                    <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-                    
-                    <div class="classic-slider" id="classic-slider">
-                        
-                        <!-- LIVRE 1 : L'Étranger -->
-                        <div class="classic-container">
-                            <div class="author-sidebar">
-                                <span class="vertical-author">ALBERT CAMUS</span>
-                            </div>
-                            <div class="main-book-wrapper">
-                                <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="L'Étranger" class="main-book-img">
-                            </div>
-                            <div class="book-details">
-                                <p class="book-badge">Roman Classique</p>
-                                <h3>Résumé du livre</h3>
-                                <p class="summary-text">Meursault, un homme indifférent au monde, commet un meurtre sous le soleil d'Alger...</p>
-                                <blockquote class="legendary-quote">
-                                    "Pour la première fois... j’ai eu une envie stupide de pleurer."
-                                </blockquote>
-                            </div>
-                        </div>
+        <div class="right-header">
 
-                        <!-- LIVRE 2  -->
-                        <div class="classic-container">
-                            <div class="author-sidebar">
-                                <span class="vertical-author">VICTOR HUGO</span>
-                            </div>
-                            <div class="main-book-wrapper">
-                                <img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg" alt="Autre Livre" class="main-book-img">
-                            </div>
-                            <div class="book-details">
-                                <p class="book-badge">Chef-d'œuvre</p>
-                                <h3>Les Misérables</h3>
-                                <p class="summary-text">Le destin croisé de Jean Valjean dans une France en pleine révolution sociale...</p>
-                                <blockquote class="legendary-quote">
-                                    "Même la nuit la plus sombre prendra fin."
-                                </blockquote>
-                            </div>
-                        </div>
+            <button class="theme-btn" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span>Mode sombre</span>
+            </button>
 
-                    </div>
+            <div class="profile">
 
-                    <!-- Bouton Droite -->
-                    <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                <div class="profile-btn">
+                <i class="fa-solid fa-user"></i>
                 </div>
-            </section>
 
-            <!-- SECTION DES ÉTAGES (4 GROUPES DE 4) -->
-            <div class="floors-container">
-                
-                <!-- ÉTAGE DES RECOMMANDATIONS -->
-                <div class="book-floor">
-                    <h2 class="category-title">NOS RECOMMANDATIONS</h2>
-                    
-                   <div class="mini-classic-grid">
-    
-                        <!-- Item 1 : Camus -->
-                        <div class="mini-classic-item">
-                            <div class="mini-author">ALBERT CAMUS</div>
-                            <div class="mini-img-wrapper">
-                                <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="L'Étranger">
-                                <div class="recommendation-badge">Pépite</div>
-                            </div>
-                            <div class="mini-details">
-                                <h4>L'Étranger</h4>
-                                <p class="mini-summary">Une exploration fascinante de l'absurdité humaine à travers le destin de Meursault.</p>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-
-                        <!-- Item 2 : Hugo -->
-                        <div class="mini-classic-item">
-                            <div class="mini-author">VICTOR HUGO</div>
-                            <div class="mini-img-wrapper">
-                                <img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg" alt="Les Misérables">
-                            </div>
-                            <div class="mini-details">
-                                <h4>Les Misérables</h4>
-                                <p class="mini-summary">Un combat éternel pour la justice, la rédemption et l'amour dans une France tourmentée.</p>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-
-                        <!-- Item 3 : James Clear -->
-                        <div class="mini-classic-item">
-                            <div class="mini-author">JAMES CLEAR</div>
-                            <div class="mini-img-wrapper">
-                                <img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg" alt="Atomic Habits">
-                                <div class="recommendation-badge">Best-Seller</div>
-                            </div>
-                            <div class="mini-details">
-                                <h4>Atomic Habits</h4>
-                                <p class="mini-summary">Comment de petits changements atomiques peuvent transformer votre vie durablement.</p>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-
-                        <!-- Item 4 : Cal Newport -->
-                        <div class="mini-classic-item">
-                            <div class="mini-author">CAL NEWPORT</div>
-                            <div class="mini-img-wrapper">
-                                <img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg" alt="Deep Work">
-                            </div>
-                            <div class="mini-details">
-                                <h4>Deep Work</h4>
-                                <p class="mini-summary">Retrouvez votre concentration profonde dans un monde de distractions numériques.</p>
-                                <div class="stars">★★★★☆</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> 
-                                    <!-- ÉTAGE PHILOSOPHIE & SAGESSE (GRILLE 2x3) -->
-                    <div class="book-floor" style="margin-top: 80px;">
-                        <h2 class="category-title">PHILOSOPHIE & SAGESSE</h2>
-                        
-                        <div class="philosophy-grid-double">
-                            
-                            <!-- LIGNE 1 -->
-                            <div class="philo-card">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Stoïcisme</span>
-                                    <h4>Pensées pour moi-même</h4>
-                                    <span class="philo-author">MARC AURÈLE</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/Terre des hommes (1939) - Antoine de Saint-Exupéry.jpeg"></div>
-                            </div>
-
-                            <div class="philo-card reverse">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Existentialisme</span>
-                                    <h4>L'Être et le Néant</h4>
-                                    <span class="philo-author">J.P. SARTRE</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg"></div>
-                            </div>
-
-                            <!-- LIGNE 2 -->
-                            <div class="philo-card reverse">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Idéalisme</span>
-                                    <h4>La République</h4>
-                                    <span class="philo-author">PLATON</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg"></div>
-                            </div>
-
-                            <div class="philo-card">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Éthique</span>
-                                    <h4>Ainsi parlait Zarathoustra</h4>
-                                    <span class="philo-author">F. NIETZSCHE</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/L'écriture ou la vie de Jorge Semprun_ Meilleure lecture cette année.jpeg"></div>
-                            </div>
-
-                            <!-- LIGNE 3 -->
-                            <div class="philo-card">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Sagesse</span>
-                                    <h4>Le Prophète</h4>
-                                    <span class="philo-author">KAHLIL GIBRAN</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg"></div>
-                            </div>
-
-                            <div class="philo-card reverse">
-                                <div class="philo-content">
-                                    <span class="philo-tag">Politique</span>
-                                    <h4>Le Prince</h4>
-                                    <span class="philo-author">NICOLAS MACHIAVEL</span>
-                                </div>
-                                <div class="philo-img"><img src="./IMG/KEVIN.jpg"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                                                            <!-- SECTION AMOUR & PASSION -->
-                    <div class="book-floor" style="margin-top: 80px;">
-                        <h2 class="category-title" style="color: #d63384; text-align: center; letter-spacing: 4px;">AMOUR & PASSION</h2>
-                        
-                        <div class="passion-grid-uniform">
-                            
-                            <!-- LIVRE 1 -->
-                            <div class="passion-item">
-                                <div class="passion-card">
-                                    <img src="./IMG/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="Livre">
-                                    <div class="passion-overlay">
-                                        <span class="heart-pulse">❤️</span>
-                                    </div>
-                                </div>
-                                <div class="passion-meta">
-                                    <h4>Orgueil et Préjugés</h4>
-                                    <p>JANE AUSTEN</p>
-                                </div>
-                            </div>
-
-                            <!-- LIVRE 2 -->
-                            <div class="passion-item">
-                                <div class="passion-card">
-                                    <img src="./IMG/J'AVOUE QUE J'AI VECU.jpeg" alt="Livre">
-                                    <div class="passion-overlay">
-                                        <span class="heart-pulse">❤️</span>
-                                    </div>
-                                </div>
-                                <div class="passion-meta">
-                                    <h4>Belle du Seigneur</h4>
-                                    <p>ALBERT COHEN</p>
-                                </div>
-                            </div>
-
-                            <!-- LIVRE 3 -->
-                            <div class="passion-item">
-                                <div class="passion-card">
-                                    <img src="./IMG/5 romans sur l’art - Amelie du Chalard.jpeg" alt="Livre">
-                                    <div class="passion-overlay">
-                                        <span class="heart-pulse">❤️</span>
-                                    </div>
-                                </div>
-                                <div class="passion-meta">
-                                    <h4>Roméo et Juliette</h4>
-                                    <p>W. SHAKESPEARE</p>
-                                </div>
-                            </div>
-
-                        
-
-                        </div>
-                    </div>
-            </div> 
-
-        </main>
-
-        <!-- DROITE -->
-        <aside class="sidebar-right">
-            <h3>Citations du jour</h3>
-            <div class="quotes-mask">
-                <div class="quotes-track">
-                    <div class="quote-item">"La vie est un mystère qu'il faut vivre, pas un problème à résoudre."</div>
-                    <div class="quote-item">"Agis comme s'il était impossible d'échouer."</div>
-                    <div class="quote-item">"Le succès, c'est tomber sept fois, se relever huit."</div>
-                    <div class="quote-item">"La liberté commence où l’ignorance finit."</div>
-                    <div class="quote-item">"Au milieu de l’hiver, j’ai découvert en moi un invincible été."</div>
-                    <div class="quote-item">"La vie est un récit fragile."</div>
-                    <div class="quote-item">"Ils ne savaient pas que c’était impossible, alors ils l’ont fait."</div>
-                    <div class="quote-item"> "La langue est une arme puissante de culture."</div>
-                    <div class="quote-item">"La douleur est inévitable, la souffrance est optionnelle."</div>
-                    <div class="quote-item"> "Le mensonge donne des fleurs mais pas de fruits."</div>
-                    <div class="quote-item">"Le tigre ne proclame pas sa tigritude, il bondit."</div>
-                    <div class="quote-item">"L’émotion est nègre comme la raison est hellène."</div>
-                    <div class="quote-item">"La foi est l’oiseau qui chante. "</div>
-                    <div class="quote-item">"Votre douleur est la rupture de la coquille."</div>
-                    <div class="quote-item">"Là où il y a ruine, il y a espoir."</div>
-                    <div class="quote-item">"Un livre doit être la hache qui brise la mer gelée en nous."</div>
-                    <div class="quote-item">"Être ou ne pas être, telle est la question."</div>
-                    <div class="quote-item">"La souffrance est l’origine de la conscience."</div>
-                    <div class="quote-item">"Tant que les lions n’auront pas leurs historiens, les histoires de chasse glorifieront toujours le chasseur."</div>
-                    <div class="quote-item">"La peur ne prévient pas la mort."</div>
-                    <div class="quote-item">"L’identité ne se compartimente pas."</div>
-                    <div class="quote-item">"Le travail est l’amour rendu visible."</div>
-                    <div class="quote-item">"Le monde brise tout le monde."</div>
-                    <div class="quote-item">"Tu ne peux pas contrôler tous les événements."</div>
-                    <div class="quote-item">"Ce n’est pas vrai que les gens cessent de poursuivre leurs rêves."</div>
-                    <div class="quote-item">"Quand tu veux une chose, tout l’univers conspire."</div>
-                    <div class="quote-item">"L’art est un effort pour créer."</div>
-                    <div class="quote-item"></div>
-                    <div class="quote-item">"Un voyage de mille lieues commence par un pas."</div>
-                    <div class="quote-item">"Connais ton ennemi et connais-toi."</div>
-                    <div class="quote-item">"Les livres sont des souvenirs."</div>
-                    <div class="quote-item">"L’histoire est faite de voix oubliées."</div>
-                    <div class="quote-item">"Nous sommes faits d’histoires."</div>
-                    <div class="quote-item">"La nature façonne l’homme."</div>
-                    <!-- Copie de la première pour la boucle infinie -->
-                    <div class="quote-item">"La vie est un mystère qu'il faut vivre, pas un problème à résoudre."</div>
+                <div class="profile-menu">
+                    <a href="#">Mon profil</a>
+                    <a href="#">Mes favoris</a>
+                    <a href="#">Mes achats</a>
+                    <a href="#">Déconnexion</a>
                 </div>
+
             </div>
-        </aside>
+        </div>    
     </div>
-   <footer class="pask-footer">
-        <div class="footer-left">
-            <h2>PASK</h2>
-        </div>
+</header>
 
-        <div class="footer-center">
-            <p>Lire des livres</p>
-            <p class="highlight">Lire délivre</p>
-        </div>
+<!-- HERO -->
 
-        <div class="footer-right">
-            <div class="icons">
-                <span>IG</span> <span>FB</span> <span>TW</span>
+<section class="hero container">
+
+    <h1>
+        Découvrez des livres <span>exceptionnels</span>
+    </h1>
+
+    <p>
+        Explorez une bibliothèque moderne pensée pour les passionnés de lecture.
+        Trouvez rapidement des romans captivants, des œuvres philosophiques profondes
+        et des livres de développement personnel soigneusement sélectionnés.
+        Pask vous aide à découvrir vos prochaines lectures avec une expérience premium,
+        fluide et élégante.
+    </p>
+
+    <div class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un livre, un auteur ou une catégorie..."
+            >
+
+            <div class="search-results" id="searchResults">
+
+                <div class="result-item" data-title="L'Étranger Albert Camus">
+                    <img src="./IMG/livre/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+                    <div>
+                        <h4>L'Étranger</h4>
+                        <p>Albert Camus</p>
+                    </div>
+                </div>
+
+                <div class="result-item" data-title="Atomic Habits James Clear">
+                    <img src="./IMG/acceuil/file_000000006a5871f8b8ccd14fffcd6f93.png" alt="">
+                    <div>
+                        <h4>Atomic Habits</h4>
+                        <p>James Clear</p>
+                    </div>
+                </div>
+
+                <div class="result-item" data-title="Méditations Marc Aurèle">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=500&auto=format&fit=crop" alt="">
+                    <div>
+                        <h4>Méditations</h4>
+                        <p>Marc Aurèle</p>
+                    </div>
+                </div>
+
             </div>
-            <p class="email">support: <span>contact@pask.com</span></p>
+
         </div>
-    </footer>
-     
-</body>
+
+    </div>
+
+</section>
+
+<!-- SUBJECTION -->
+
+<section class="section container">
+
+<div class="section-title">
+<h2>Subjection</h2>
+<p>Les livres vedettes les plus appréciés du moment.</p>
+</div>
+
+<div class="subjection">
+
+<div class="slider" id="slider">
+
+<!-- SLIDE 1 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/Request Rejected.jpeg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Bestseller</div>
+<div class="badge">Premium</div>
+<div class="badge">Recommandé</div>
+</div>
+
+<h3>Le Pouvoir des Habitudes</h3>
+
+<div class="author">
+Charles Duhigg
+</div>
+
+<p class="summary">
+Un livre fascinant qui explique comment les habitudes influencent
+notre vie quotidienne, notre réussite et notre façon de penser.
+Une œuvre puissante pour comprendre les mécanismes du changement.
+</p>
+
+<div class="price">
+2 900 fc
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 2 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/acceuil/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Nouveau</div>
+<div class="badge">Populaire</div>
+<div class="badge">Premium</div>
+</div>
+
+<h3>L'Art de Penser</h3>
+
+<div class="author">
+Blaise Pascal
+</div>
+
+<p class="summary">
+Une immersion dans la réflexion humaine, la logique et la philosophie.
+Ce livre pousse à analyser le monde avec profondeur et intelligence.
+</p>
+
+<div class="price">
+2 400 fc
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/acceuil/bc522a7e7ace2a856addb53e9fec9e6b.jpg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Recommandé</div>
+<div class="badge">Bestseller</div>
+<div class="badge">Nouveau</div>
+</div>
+
+<h3>Vers le Succès</h3>
+
+<div class="author">
+Napoleon Hill
+</div>
+
+<p class="summary">
+Une référence incontournable du développement personnel.
+Apprenez les principes fondamentaux de la discipline, de la vision
+et de la réussite durable.
+</p>
+
+<div class="price">
+3 400 fc
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RECOMMANDATIONS -->
+
+<section class="section container">
+
+<div class="section-title">
+<h2>Recommandations</h2>
+<p>Une sélection moderne adaptée à vos envies.</p>
+</div>
+
+<!-- ROMANS -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Romans
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/bc522a7e7ace2a856addb53e9fec9e6b.jpg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">L'Étranger</div>
+<div class="book-author">Albert Camus</div>
+</div>
+
+<div class="rating">
+⭐ 4.8
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 890 fc</div>
+<div class="book-badge">Populaire</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/philosophie/Les 16 livres indispensables selon Ernest Hemingway.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">La Nuit Éternelle</div>
+<div class="book-author">Victor Morel</div>
+</div>
+
+<div class="rating">
+⭐ 4.7
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 250 fc</div>
+<div class="book-badge">Nouveau</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/Jean D'Ormesson.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">Les Horizons Perdus</div>
+<div class="book-author">Sarah Klein</div>
+</div>
+
+<div class="rating">
+⭐ 4.9
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 000 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">Le Dernier Voyage</div>
+<div class="book-author">Marc Lenoir</div>
+</div>
+
+<div class="rating">
+⭐ 4.6
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 000fc</div>
+<div class="book-badge">Recommandé</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PHILOSOPHIE -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Philosophie
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/J'AVOUE QUE J'AI VECU.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Méditations</div>
+<div class="book-author">Marc Aurèle</div>
+</div>
+
+<div class="rating">⭐ 4.9</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 000 fc</div>
+<div class="book-badge">Bestseller</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Les 16 livres indispensables selon Ernest Hemingway.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Ainsi Parlait Zarathoustra</div>
+<div class="book-author">Nietzsche</div>
+</div>
+
+<div class="rating">⭐ 4.7</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 800 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Pascal, le coeur et la raison _ sous la direction de Jean-Marc Chatelain [Paris] _ Bibliothèque Nationale de France, 2016 http___cataleg_ub.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Le Banquet</div>
+<div class="book-author">Platon</div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 000 fc</div>
+<div class="book-badge">Classique</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Pensees (Blaise Pascal).jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Pensées</div>
+<div class="book-author">Blaise Pascal</div>
+</div>
+
+<div class="rating">⭐ 4.6</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 500 fc</div>
+<div class="book-badge">Populaire</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- DEV PERSO -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Développement personnel
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/5 livres de développement personnel à emporter dans sa valise - L'orga de Miléna.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Un rien peut tout changer !</div>
+<div class="book-author">James Clear</div>
+</div>
+
+<div class="rating">⭐ 4.9</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">3 000 fc</div>
+<div class="book-badge">Bestseller</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/1055320125197763437.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Pere riche pere pauvre</div>
+<div class="book-author">Robert Kiyosaki </div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 700 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/L'art de la guerre_ Traduit et commenté du chinois par Jean Lévi - Inédit.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">L'art de la guerre</div>
+<div class="book-author">Sun Tzu</div>
+</div>
+
+<div class="rating">⭐ 4.7</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 300 fc</div>
+<div class="book-badge">Recommandé</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/61 meilleurs livres de développement personnel à lire, quel que soit votre âge.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Les 48 lois du pouvoir</div>
+<div class="book-author">Robert Green</div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 500 fc</div>
+<div class="book-badge">Nouveau</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+© 2026 Pask — Plateforme moderne de découverte de livres.
+</div>
+
+</footer>
+
 <script>
-    const slider = document.getElementById("classic-slider");
-    const prevButton = document.getElementById("slide-arrow-prev");
-    const nextButton = document.getElementById("slide-arrow-next");
 
-    nextButton.addEventListener("click", () => {
-        const slideWidth = slider.clientWidth;
-        slider.scrollLeft += slideWidth;
-    });
+/* MODE SOMBRE / CLAIR */
 
-    prevButton.addEventListener("click", () => {
-        const slideWidth = slider.clientWidth;
-        slider.scrollLeft -= slideWidth;
-    });
+const themeBtn = document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", () => {
+
+document.body.classList.toggle("light");
+
+if(document.body.classList.contains("light")){
+themeBtn.innerHTML = `
+<i class="fa-solid fa-sun"></i>
+<span>Mode clair</span>
+`;
+}else{
+themeBtn.innerHTML = `
+<i class="fa-solid fa-moon"></i>
+<span>Mode sombre</span>
+`;
+}
+
+});
+
+/* RECHERCHE */
+
+const searchInput = document.getElementById("searchInput");
+const results = document.querySelectorAll(".result-item");
+
+searchInput.addEventListener("input", () => {
+
+const value = searchInput.value.toLowerCase();
+
+results.forEach(item => {
+
+const text = item.dataset.title.toLowerCase();
+
+if(text.includes(value) && value !== ""){
+item.style.display = "flex";
+}else{
+item.style.display = "none";
+}
+
+});
+
+});
+
+/* SLIDER */
+
+const slider = document.getElementById("slider");
+
+let index = 0;
+
+setInterval(() => {
+
+index++;
+
+if(index > 2){
+index = 0;
+}
+
+slider.style.transform = `translateX(-${index * 100}%)`;
+
+}, 5000);
+
 </script>
+
+</body>
 </html>
