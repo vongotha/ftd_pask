@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Pask | Livres</title>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="livre.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container navbar">
+
+        <div class="logo">
+        Pask
+        </div>
+
+        <nav class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        </nav>
+
+        <div class="right-header">
+
+            <button class="theme-btn" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span>Mode sombre</span>
+            </button>
+
+            <div class="profile">
+
+                <div class="profile-btn">
+                <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="profile-menu">
+                    <a href="#">Mon profil</a>
+                    <a href="#">Mes favoris</a>
+                    <a href="#">Mes achats</a>
+                    <a href="#">Déconnexion</a>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero container">
+
+    <h1>
+        Découvrez des livres <span>exceptionnels</span>
+    </h1>
+
+    <p>
+        Explorez une bibliothèque moderne pensée pour les passionnés de lecture.
+        Trouvez rapidement des romans captivants, des œuvres philosophiques profondes
+        et des livres de développement personnel soigneusement sélectionnés.
+        Pask vous aide à découvrir vos prochaines lectures avec une expérience premium,
+        fluide et élégante.
+    </p>
+
+    <div class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un livre, un auteur ou une catégorie..."
+            >
+
+            <div class="search-results" id="searchResults">
+
+                <div class="result-item" data-title="L'Étranger Albert Camus">
+                    <img src="./IMG/livre/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+                    <div>
+                        <h4>L'Étranger</h4>
+                        <p>Albert Camus</p>
+                    </div>
+                </div>
+
+                <div class="result-item" data-title="Atomic Habits James Clear">
+                    <img src="./IMG/acceuil/file_000000006a5871f8b8ccd14fffcd6f93.png" alt="">
+                    <div>
+                        <h4>Atomic Habits</h4>
+                        <p>James Clear</p>
+                    </div>
+                </div>
+
+                <div class="result-item" data-title="Méditations Marc Aurèle">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=500&auto=format&fit=crop" alt="">
+                    <div>
+                        <h4>Méditations</h4>
+                        <p>Marc Aurèle</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SUBJECTION -->
+
+<section class="section container">
+
+<div class="section-title">
+<h2>Subjection</h2>
+<p>Les livres vedettes les plus appréciés du moment.</p>
+</div>
+
+<div class="subjection">
+
+<div class="slider" id="slider">
+
+<!-- SLIDE 1 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/Request Rejected.jpeg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Bestseller</div>
+<div class="badge">Premium</div>
+<div class="badge">Recommandé</div>
+</div>
+
+<h3>Le Pouvoir des Habitudes</h3>
+
+<div class="author">
+Charles Duhigg
+</div>
+
+<p class="summary">
+Un livre fascinant qui explique comment les habitudes influencent
+notre vie quotidienne, notre réussite et notre façon de penser.
+Une œuvre puissante pour comprendre les mécanismes du changement.
+</p>
+
+<div class="price">
+2 900 fc
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 2 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/acceuil/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Nouveau</div>
+<div class="badge">Populaire</div>
+<div class="badge">Premium</div>
+</div>
+
+<h3>L'Art de Penser</h3>
+
+<div class="author">
+Blaise Pascal
+</div>
+
+<p class="summary">
+Une immersion dans la réflexion humaine, la logique et la philosophie.
+Ce livre pousse à analyser le monde avec profondeur et intelligence.
+</p>
+
+<div class="price">
+2 400 fc
+</div>
+
+</div>
+
+</div>
+
+<!-- SLIDE 3 -->
+
+<div class="slide">
+
+<div class="slide-image">
+<img src="./IMG/acceuil/bc522a7e7ace2a856addb53e9fec9e6b.jpg" alt="">
+</div>
+
+<div class="slide-content">
+
+<div class="badges">
+<div class="badge">Recommandé</div>
+<div class="badge">Bestseller</div>
+<div class="badge">Nouveau</div>
+</div>
+
+<h3>Vers le Succès</h3>
+
+<div class="author">
+Napoleon Hill
+</div>
+
+<p class="summary">
+Une référence incontournable du développement personnel.
+Apprenez les principes fondamentaux de la discipline, de la vision
+et de la réussite durable.
+</p>
+
+<div class="price">
+3 400 fc
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RECOMMANDATIONS -->
+
+<section class="section container">
+
+<div class="section-title">
+<h2>Recommandations</h2>
+<p>Une sélection moderne adaptée à vos envies.</p>
+</div>
+
+<!-- ROMANS -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Romans
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/bc522a7e7ace2a856addb53e9fec9e6b.jpg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">L'Étranger</div>
+<div class="book-author">Albert Camus</div>
+</div>
+
+<div class="rating">
+⭐ 4.8
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 890 fc</div>
+<div class="book-badge">Populaire</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/philosophie/Les 16 livres indispensables selon Ernest Hemingway.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">La Nuit Éternelle</div>
+<div class="book-author">Victor Morel</div>
+</div>
+
+<div class="rating">
+⭐ 4.7
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 250 fc</div>
+<div class="book-badge">Nouveau</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/Jean D'Ormesson.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">Les Horizons Perdus</div>
+<div class="book-author">Sarah Klein</div>
+</div>
+
+<div class="rating">
+⭐ 4.9
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 000 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="./IMG/roman/ÉTRANGER (L') par Albert Camus couverture souple _ Indigo Chapters.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+
+<div>
+<div class="book-title">Le Dernier Voyage</div>
+<div class="book-author">Marc Lenoir</div>
+</div>
+
+<div class="rating">
+⭐ 4.6
+</div>
+
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 000fc</div>
+<div class="book-badge">Recommandé</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PHILOSOPHIE -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Philosophie
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/J'AVOUE QUE J'AI VECU.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Méditations</div>
+<div class="book-author">Marc Aurèle</div>
+</div>
+
+<div class="rating">⭐ 4.9</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 000 fc</div>
+<div class="book-badge">Bestseller</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Les 16 livres indispensables selon Ernest Hemingway.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Ainsi Parlait Zarathoustra</div>
+<div class="book-author">Nietzsche</div>
+</div>
+
+<div class="rating">⭐ 4.7</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 800 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Pascal, le coeur et la raison _ sous la direction de Jean-Marc Chatelain [Paris] _ Bibliothèque Nationale de France, 2016 http___cataleg_ub.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Le Banquet</div>
+<div class="book-author">Platon</div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 000 fc</div>
+<div class="book-badge">Classique</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/philosophie/Pensees (Blaise Pascal).jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Pensées</div>
+<div class="book-author">Blaise Pascal</div>
+</div>
+
+<div class="rating">⭐ 4.6</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">1 500 fc</div>
+<div class="book-badge">Populaire</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- DEV PERSO -->
+
+<div class="book-category">
+
+<h3 class="category-title">
+Développement personnel
+</h3>
+
+<div class="books-grid">
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/5 livres de développement personnel à emporter dans sa valise - L'orga de Miléna.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Un rien peut tout changer !</div>
+<div class="book-author">James Clear</div>
+</div>
+
+<div class="rating">⭐ 4.9</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">3 000 fc</div>
+<div class="book-badge">Bestseller</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/1055320125197763437.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Pere riche pere pauvre</div>
+<div class="book-author">Robert Kiyosaki </div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 700 fc</div>
+<div class="book-badge">Premium</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/L'art de la guerre_ Traduit et commenté du chinois par Jean Lévi - Inédit.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">L'art de la guerre</div>
+<div class="book-author">Sun Tzu</div>
+</div>
+
+<div class="rating">⭐ 4.7</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 300 fc</div>
+<div class="book-badge">Recommandé</div>
+</div>
+
+</div>
+</div>
+
+<div class="book-card">
+<div class="book-cover">
+<img src="./IMG/developpement/61 meilleurs livres de développement personnel à lire, quel que soit votre âge.jpeg" alt="">
+</div>
+
+<div class="book-info">
+
+<div class="book-top">
+<div>
+<div class="book-title">Les 48 lois du pouvoir</div>
+<div class="book-author">Robert Green</div>
+</div>
+
+<div class="rating">⭐ 4.8</div>
+</div>
+
+<div class="book-bottom">
+<div class="book-price">2 500 fc</div>
+<div class="book-badge">Nouveau</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+© 2026 Pask — Plateforme moderne de découverte de livres.
+</div>
+
+</footer>
+
+<script>
+
+/* MODE SOMBRE / CLAIR */
+
+const themeBtn = document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", () => {
+
+document.body.classList.toggle("light");
+
+if(document.body.classList.contains("light")){
+themeBtn.innerHTML = `
+<i class="fa-solid fa-sun"></i>
+<span>Mode clair</span>
+`;
+}else{
+themeBtn.innerHTML = `
+<i class="fa-solid fa-moon"></i>
+<span>Mode sombre</span>
+`;
+}
+
+});
+
+/* RECHERCHE */
+
+const searchInput = document.getElementById("searchInput");
+const results = document.querySelectorAll(".result-item");
+
+searchInput.addEventListener("input", () => {
+
+const value = searchInput.value.toLowerCase();
+
+results.forEach(item => {
+
+const text = item.dataset.title.toLowerCase();
+
+if(text.includes(value) && value !== ""){
+item.style.display = "flex";
+}else{
+item.style.display = "none";
+}
+
+});
+
+});
+
+/* SLIDER */
+
+const slider = document.getElementById("slider");
+
+let index = 0;
+
+setInterval(() => {
+
+index++;
+
+if(index > 2){
+index = 0;
+}
+
+slider.style.transform = `translateX(-${index * 100}%)`;
+
+}, 5000);
+
+</script>
+
+</body>
+</html>
